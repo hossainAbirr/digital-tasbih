@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tasbih</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="md:p-24 space-y-10">
+      <h1 class="text-violet-600 text-4xl font-bold text-center">
+        Digital <span class="text-yellow-500">Tasbih</span>
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-white">
+        <div class="bg-yellow-500 h-full p-5 rounded-lg flex flex-col justify-evenly items-center">
+          <h2 class="text-3xl">আলহামদুলিল্লাহ</h2>
+          <h2 id="count1" class="text-3xl text-center py-5">0</h2>
+          <div>
+            <button id="btn-inc1" class="btn">Increment</button>
+            <button id="btn-dec1" class="btn btn-secondary">Decrement</button>
+          </div>
+        </div>
+
+
+        <div class="bg-orange-500 h-full p-5 rounded-lg flex flex-col justify-evenly items-center">
+          <h2 class="text-3xl">সুবহানাল্লাহ</h2>
+          <h2 id="count2" class="text-3xl text-center py-5">0</h2>
+          <div>
+            <button id="btn-inc2" class="btn">Increment</button>
+            <button id="btn-dec2" class="btn btn-secondary">Decrement</button>
+          </div>
+        </div>
+        <div class="bg-sky-500 h-full p-5 rounded-lg flex flex-col justify-evenly items-center">
+          <h2 class="text-3xl">আল্লাহু আকবার</h2>
+          <h2 id="count3" class="text-3xl text-center py-5">0</h2>
+          <div>
+            <button id="btn-inc3" class="btn">Increment</button>
+            <button id="btn-dec3" class="btn btn-secondary">Decrement</button>
+          </div>
+        </div>
+    </div>
+</section>
+<div class="flex justify-center">
+<button class="btn btn-secondary text-white" id="reset-btn">Reset</button>
+</div>
+</body>
+<script src="tasbih.js"></script>
+</html>
